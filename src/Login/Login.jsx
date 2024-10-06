@@ -6,7 +6,7 @@ const Home = ()=>{
         <div className="flex w-full h-[658px]">
             <Reloadpage/>
             <div className="bg-[#1e9e6b40] w-[50%] justify-center flex items-center max-[600px]:hidden">
-                <img src="../../public/images/6/image/image.svg" alt="" className=""/>
+                <img src="/imageport.svg" alt="" className=""/>
             </div>
             <div className="flex items-center justify-center w-[50%] max-[600px]:w-full">
                 <div>

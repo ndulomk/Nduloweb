@@ -14,7 +14,7 @@ const Home = ()=>{
                   </div>
                 </div>
                 <div>
-                    <img src="../../public/images/3/image/illustra.png" alt="ee" className="w-[300px] max-[400px]:w-[200px]"/>
+                    <img src="/illustra.png" alt="ee" className="w-[300px] max-[400px]:w-[200px]"/>
                 </div>
             </nav>
             <section className="px-[10%]">
@@ -25,7 +25,7 @@ const Home = ()=>{
 
                     return(
                       <div key={index} className="border-[1px] rounded-[4px]">
-                        <img className="rounded-t-[4px]" src={item.id === 1 ?"../../public/images/3/image/image-1.png":item.id ===2 ?"../../public/images/3/image/image-2.png":item.id === 3 ? "../../public/images/3/image/image-3.png":item.id === 4? "../../public/images/3/image/image-4.png":item.id === 5?"../../public/images/3/image/image-5.png":item.id === 6?"../../public/images/3/image/image-6.png": <></>} alt="" />
+                        <img className="rounded-t-[4px]" src={item.id === 1 ?"/view.png":item.id ===2 ?"/image-2.png":item.id === 3 ? "/image-3.png":item.id === 4? "/image-4.png":item.id === 5?"/image-5.png":item.id === 6?"/image-6.png": <></>} alt="" />
                         <div className="p-5">
                           <h1 className="font-bold">{item.h1}</h1>
                           <p className="font-[500] text-[15px]">{item.p}</p>

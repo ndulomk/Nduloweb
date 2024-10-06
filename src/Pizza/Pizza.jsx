@@ -114,7 +114,7 @@ const Pizza = () => {
         O input morada esta vazio
       </div>}
       {modal&&<div className="bg-[#00000056] w-full h-[1210px] absolute z-10 flex justify-center pt-[100px]">
-        <div className="bg-[#fefbf4] border-[#ffbc48d8] border-[1px] fixed w-[40%] h-[60%] rounded-[5px] py-3 flex justify-start flex-col px-[2%] shadow-xl">
+        <div className="bg-[#fefbf4] border-[#ffbc48d8] border-[1px] fixed w-[40%] h-[60%] rounded-[5px] py-3 flex justify-start flex-col px-[2%] shadow-xl max-[880px]:w-[70%] max-[500px]:w-[90%] max-[390px]:h-[80%]">
         <span className="font-[600] text-[18px] mb-[20px] text-center">Finish Order</span>
         <div className="">
           {
@@ -122,8 +122,8 @@ const Pizza = () => {
 
               return(
                 <div key={index}>
-                  <div className="flex justify-between items-center mb-[20px] bg-[#94944790] px-2 py-1  rounded-[5px] shadow-xl">
-                    <div className="">
+                  <div className="flex justify-between items-center mb-[20px] bg-[#94944790] px-2 py-1  rounded-[5px] shadow-xl max-[365px]:flex-col">
+                    <div className="max-[270px]:flex max-[270px]:flex-col max-[270px]:items-center">
                       <span className="font-[500] ">{item.nome}</span>
                       <span className="text-[green]">{currency(item.price)}</span>
                       <span>{"("}{item.quantity}{")"}</span>
@@ -135,7 +135,7 @@ const Pizza = () => {
               )
             })
           }
-          <div className="font-bold">
+          <div className="font-bold max-[370px]:text-center">
             Total: {currency(total)}
           </div>
         </div>
@@ -152,7 +152,7 @@ const Pizza = () => {
               </form>:select === "Takeaway"?<form className={changeother ?"flex flex-col items-center":""}><input id="phone" type="number" className={changeother?"border-[red] border-[1px] rounded-[15px] px-2 py-[4px]":"border-[gray] border-[1px] rounded-[15px] px-2 py-[4px]"} placeholder="phone number" onChange={e=>setPhone(e.target.value)}/>
               {changeother&& <span className="text-red-800">Preencha este campo ou passe um valor aceitavel</span>}
               </form>:<></>}
-              <div className="flex gap-5 items-center mt-[20px]">
+              <div className="flex gap-5 items-center mt-[20px] max-[290px]:flex-col">
                 <button className="bg-[#ffbc48d8] font-[500] px-2 py-1 rounded-[15px]  shadow-xl" onClick={chat}>Finalizar Compra</button>
                 <button onClick={()=>setModal(false)} className="bg-[red] px-2 py-1 rounded-[15px] shadow-xl">Cancelar</button>
               </div>
@@ -162,7 +162,7 @@ const Pizza = () => {
       </div>}
       <nav>
         <div className=" h-[300px] flex items-center justify-center" style={{backgroundImage:"url('/src/assets/image-1.png')", backgroundPositionY:"80%", backgroundPositionX:"50%"}}>
-            <img src="../../public/images/8/image/logo.svg" alt="" className="w-[25%] max-[960px]:w-[40%]"/>
+            <img src="/pizzalogo.svg" alt="" className="w-[25%] max-[960px]:w-[40%]"/>
         </div>
       </nav>
       <section className="mt-[40px]">
@@ -188,7 +188,7 @@ const Pizza = () => {
                   <div key={index} className="flex flex-col items-center">
                     <div className="flex absolute items-center justify-center">
 
-                      <img className="w-[55%] hover:scale-110 hover:-rotate-2 duration-300" src={item.id === 0?"../../public/images/8/image/pizza-1.png":item.id === 1?"../../public/images/8/image/pizza-2.png":item.id === 2?"../../public/images/8/image/pizza-3.png":item.id === 3?"../../public/images/8/image/pizza-1.png":<></>} alt="" />
+                      <img className="w-[55%] hover:scale-110 hover:-rotate-2 duration-300" src={item.id === 0?"/pizza-1.png":item.id === 1?"./pizza-2.png":item.id === 2?"/pizza-3.png":item.id === 3?"/pizza-1.png":<></>} alt="" />
 
                     </div>
                     
@@ -208,7 +208,7 @@ const Pizza = () => {
       </section>
       <section className="mt-[60px] px-[10%] mb-[60px]">
             <div className="flex items-center justify-center gap-[10%] max-[960px]:flex-col">
-              <img src="../../public/images/8/image/image-2.png" alt="" className="w-[100%] h-[400px] max-[960px]:w-[80%] max-[350px]:h-[300px]"/>
+              <img src="/imagepizza.png" alt="" className="w-[100%] h-[400px] max-[960px]:w-[80%] max-[350px]:h-[300px]"/>
               <div className="text-[17px] max-[960px]:text-center">
                 <div className="font-bold text-[23px]">Sobre a La P<span className="text-[#ffbd48]">i</span><span className="text-[red]">z</span><span className="text-[#29d829]">z</span>a
                 </div>

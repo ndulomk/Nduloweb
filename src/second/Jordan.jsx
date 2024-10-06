@@ -18,7 +18,7 @@ const Home = ()=>{
         <nav className="grid place-items-center font-[600] p-2">
           <div>Frete Gratis Para toda Angola</div>
         </nav>
-        <div className="bg-home h-[300px] text-white flex p-[10%] items-center" style={{backgroundImage:"url('/src/assets/hero.png')"}} >
+        <div className="bg-home h-[300px] text-white flex p-[10%] items-center" style={{backgroundImage:"url('/hero.png')"}} >
           <div>
             <div className="flex items-center mb-5 font-[600]">
                 <SiJordan size={20} className="mr-2"/> Jordan shoes
@@ -55,7 +55,7 @@ const Home = ()=>{
                 return(
                   <div key={index} className="cursor-pointer" onClick={addto}>
                     <div>
-                      <img className="bg-[#f0f3ff] py-2 px-[40px]" src={item.id === 1 ?"../public/images/2/image/jordan-1.png": item.id === 2 ?"../public/images/2/image/jordan-2.png":item.id === 3 ? "../public/images/2/image/jordan-3.png":item.id === 4 ? "../public/images/2/image/jordan-4.png":item.id === 5 ? "../public/images/2/image/jordan-5.png":item.id === 6 ?"../public/images/2/image/jordan-6.png":<></>} alt="ee" />
+                      <img className="bg-[#f0f3ff] py-2 px-[40px]" src={item.id === 1 ?"/jordan-1.png": item.id === 2 ?"/jordan-2.png":item.id === 3 ? "/jordan-3.png":item.id === 4 ? "/jordan-4.png":item.id === 5 ? "/jordan-5.png":item.id === 6 ?"/jordan-6.png":<></>} alt="ee" />
                     </div>
                     <h1>
                       {item.nome}
