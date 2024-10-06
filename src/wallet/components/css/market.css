@@ -1,0 +1,39 @@
+.overChild h1{margin-right: 20px; cursor: pointer;}
+.gray{color: rgb(109, 113, 134);}
+.cardTable{
+    background-color: rgb(175, 134, 38); 
+    height: 170px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 20px 25px 20px;
+    border-radius: 9px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.182);
+    color: #fff;
+}
+.th{display: flex;justify-content: space-between;margin-bottom: 3px;border-bottom: solid 2px rgba(0, 0, 0, 0.185);
+margin-top: 5px;
+align-items: center;
+}
+.red{color: red;}
+.th td img{height: 20px;
+width: 20px;}
+.th td{display: flex;align-items: center;margin-bottom: 10px;}
+.boxTable{display: flex;justify-content: space-between;margin-top: 20px;align-items: center;}
+.boxGray{background-color: rgb(175, 134, 38);padding: 20px;border-radius: 9px;margin-top: 20px;box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.182);color: #fff;}
+.inputt{padding: 10px 20px;border-radius: 4px;border: solid rgba(0, 0, 0, 0.244);}
+.toptable{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-spacing: 0;
+}
+.tr2 th{padding: 10px 20px;}
+.items td{text-align: center;padding: 20px 20px;border-bottom: solid 2px rgba(23, 29, 118, 0.272);}
+.btnNew{padding: 2px 5px;text-align: center;border: none;border-radius: 3px;
+
+}
+.select{border: none;border-radius: 12px;}
+.boxTable2{display: flex;justify-content: space-around;margin-top: 20px;align-items: center;}
+.boxTable h3{cursor: pointer;}

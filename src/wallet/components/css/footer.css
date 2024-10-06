@@ -1,0 +1,7 @@
+footer{display: flex; justify-content: space-between;border-bottom: solid 2px rgb(92, 6, 30);color: rgb(134, 135, 141);}
+footer div p{cursor: pointer;margin-bottom: 9px;}
+footer div h1{font-size: 25px;margin-bottom: 9px;}
+.input{border-radius: 19px;background-color: rgb(84, 84, 144);}
+footer div input{padding: 10px 30px;border-radius: 10px;background-color: rgb(160, 177, 255);border: none;}
+footer div div{display: flex; align-items: center;}
+.btnNO{padding: 7px 10px; border-radius: 7px;display: flex;align-items: center;background-color: rgb(190, 148, 42);border: none;}

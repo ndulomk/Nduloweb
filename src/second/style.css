@@ -1,0 +1,12 @@
+
+@media(max-width:800px){
+    .mine{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        place-items: center;
+    }
+}
+@media(max-width:600px){
+    .mine{
+        grid-template-columns: repeat(1,minmax(0, 1fr));
+    }
+}

@@ -1,0 +1,25 @@
+export const Fundo =[{
+    nome:'VBIPRIME',
+    price:56.90800,
+    change:24.900,
+    volume:200.800,
+    cap:1.608349
+},{
+    nome:'VBIPRIME',
+    price:56.90800,
+    change:24.900,
+    volume:200.800,
+    cap:1.608349
+},{
+    nome:'VBIPRIME',
+    price:56.90800,
+    change:24.900,
+    volume:200.800,
+    cap:1.608349
+},{
+    nome:'VBIPRIME',
+    price:56.90800,
+    change:24.900,
+    volume:200.800,
+    cap:1.608349
+}]

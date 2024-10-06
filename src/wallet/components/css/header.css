@@ -1,0 +1,61 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom:solid 2px rgba(0, 0, 0, 0.208); */
+
+}
+.brand{font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.brand:hover{color: rgb(58, 61, 223);}
+.navbar{display: flex;
+    justify-content:space-between; 
+    align-items: center;}
+.navbar li{list-style: none; 
+    margin-right: 20px;}
+.navbar li a:hover{color: rgb(36, 76, 235);}
+.black{text-decoration: none; 
+    color: #000000;
+    text-transform: capitalize;
+    }
+.buttons{display: flex;
+    align-items: center;}
+
+.btnGold{padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #c79322;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+.btnGold:hover{background-color: #1b228d;}
+.btn{border: none;
+    display: flex;
+    align-items: center; 
+    padding: 7px 5px;
+    border-radius: 4%;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{background-color: darkgray;
+    border-radius: 3px;}
+.change{color: white;
+    text-decoration: none; 
+    text-transform: capitalize;
+    }
+.btnChange{border: none;
+        display: flex;
+        align-items: center; 
+        padding: 7px 5px;
+        border-radius: 4%;
+        background-color: #181a20;
+        cursor: pointer;
+        transition: 0.5s;
+    }

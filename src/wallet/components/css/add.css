@@ -1,0 +1,77 @@
+.add{
+    background: #fff;
+    padding: 20px;
+    height: 400px; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+.add h1{color: black;}
+.addChild{
+
+}
+.inputadd{
+    height: 30px;
+    width: 250px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.inputaddinfo{
+    height: 100px;
+    width: 540px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.btninfo{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 3px;
+    background: rgb(37, 106, 27);
+    color: #fff;
+    cursor: pointer;
+}
+.admin{
+    background: #a2a4e2;
+    color: black;
+    height: 80px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btnadmin{
+    height: 50px;
+    border: none;
+    background-color: #191eb2;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.btnadmin:nth-child(2){width: 110px;}

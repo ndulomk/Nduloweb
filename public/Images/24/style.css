@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --brand-color: #269e6d;
+
+  --dark-10: #262626;
+  --dark-20: #414141;
+  --dark-30: #737373;
+
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kufam", sans-serif;
+}

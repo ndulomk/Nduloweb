@@ -1,0 +1,74 @@
+.hero{background-image: url('/public/back.png');background-size: cover;min-height: 100vh;}
+.h1{font-size: 89px;}
+.flex{display: flex;align-items: center;}
+.flex div{display: flex; align-items: center;}
+.margin{margin-top: 20px;}
+.padding{display: flex;align-items: center;justify-content: space-between;margin-top: 40px;}
+.image{
+    height: 50%;
+    width: 80%;
+}
+
+.blue{color: #2935d7;}
+.img{text-align: center;}
+.info{text-align: center;}
+.info h1{font-size: 40px;}
+.info p{font-size: 20px;color: darkgray;}
+.btnLight{padding: 7px 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    background-color: #c79322;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    text-align: center;
+}
+.btnLight:hover{background-color: #5f4712;}
+.grid img{height: 70%;width:100%;border-radius: 3px;}
+.grid{
+    background-color: rgb(135, 125, 102);
+    height: 250px;
+    width: 250px;
+    border-radius: 6px;
+    
+
+}
+.grid div{padding: 3px 20px;font-size: 20px;}
+.grid div p{margin-bottom: 5px;color: black;font-weight: bold; color: #fff;}
+.boxFlex{display: flex;
+    justify-content: center;
+   
+}
+.box{margin-right: 20px;
+box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.182);
+}
+.info{margin-bottom: 60px;}
+.infobase{margin-bottom: 30px;}
+.dFlex{display: flex;}
+.aItem{align-items: center;}
+.box2{padding: 20px 50px;}
+.section2{display: flex;align-items: center;margin-bottom: 90px;}
+.foto img{height: 30px;
+width: 30px;
+}
+/* .section3{background-color: #0d40da;display: flex;flex-direction: column;justify-content: center;text-align: center;} */
+
+.faq{display: flex;justify-content: center;flex-direction: column;text-align: center;background-color: #2546ff;padding: 80px;border-radius: 15px;}
+.btnSpit{border: none;
+    padding: 7px 15px;
+    border-radius: 4%;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.btnSpit:hover{background-color: darkgray;
+    border-radius: 3px;}
+
+.right p{color: darkgray;font-size: 25px;}
+.right h1{font-size: 40px;margin-bottom: 20px;color: #fff;}
+.image2{height: 90%;
+width: 100%;
+}

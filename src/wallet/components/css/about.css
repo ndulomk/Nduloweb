@@ -1,0 +1,27 @@
+.About{display: flex; align-items: center;justify-content: center;margin-top: 100px;}
+.aboutchild{
+    font-size: 40px;
+    padding: 0 80px 0 0;
+    
+}
+.aboutsis{background-color: rgb(175, 134, 38);height: 300px;width: 700px;
+border-radius: 8px;
+padding: 20px;
+
+}
+.aboutsis h3{font-size: 35px;}
+.aboutsis input{height: 40px; width: 250px;border: none;
+border-radius: 6px;
+padding: 5px;
+}
+.aboutsis div{display: flex;}
+.Createdpage{
+    display: flex;align-items: center;justify-content: center;
+}
+.createdchild h1{font-size: 40px;}
+.createdchild img{
+    height: 300px;
+    width: 300px;
+
+}
+.textDev{font-size: 30px; padding: 0 40px 0 200px;}
