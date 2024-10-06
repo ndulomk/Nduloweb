@@ -161,7 +161,7 @@ const Pizza = () => {
         </div>
       </div>}
       <nav>
-        <div className=" h-[300px] flex items-center justify-center" style={{backgroundImage:"url('/src/assets/image-1.png')", backgroundPositionY:"80%", backgroundPositionX:"50%"}}>
+        <div className=" h-[300px] flex items-center justify-center" style={{backgroundImage:"url('/image-1.png')", backgroundPositionY:"80%", backgroundPositionX:"50%"}}>
             <img src="/pizzalogo.svg" alt="" className="w-[25%] max-[960px]:w-[40%]"/>
         </div>
       </nav>
