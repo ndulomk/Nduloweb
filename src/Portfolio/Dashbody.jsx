@@ -112,7 +112,7 @@ const Dashboard = ({darkmode, setDarkmode})=>{
    
               </div>
               <div className="max-[960px]:flex max-[960px]:justify-center max-[960px]:items-center">
-                <img src="../../public/images/4/image/image.svg" alt="" className="cursor-pointer hover:scale-110 hover:-rotate-2 duration-300 max-[960px]:w-[60%] "/>
+                <img src="/primary.svg" alt="" className="cursor-pointer hover:scale-110 hover:-rotate-2 duration-300 max-[960px]:w-[60%] "/>
               </div>
             </section>
         </div>

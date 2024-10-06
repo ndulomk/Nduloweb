@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
 import { object } from "./myobject"
 import { selectboolean } from "../Redux/BooleanSlice"
-import { useNavigate } from "react-router-dom"
 
 const Projetos = ({setMenu})=>{
   const {boolean} = useSelector(selectboolean)
