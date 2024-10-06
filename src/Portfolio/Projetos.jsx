@@ -3,9 +3,8 @@ import { object } from "./myobject"
 import { selectboolean } from "../Redux/BooleanSlice"
 import { useNavigate } from "react-router-dom"
 
-const Projetos = ()=>{
+const Projetos = ({setMenu})=>{
   const {boolean} = useSelector(selectboolean)
-  const navigate = useNavigate()
     return(
         <div className="max-[650px]:mt-[40%] max-[624px]:mt-[500px] ">
             <h1 className={boolean ?"text-[#4b4edf] font-bold text-[25px] text-center" :"text-[#97edaa] font-bold text-[25px] text-center"}>Projectos</h1>
@@ -14,32 +13,25 @@ const Projetos = ()=>{
                 object.map((item, index)=>{
                   const sendto=()=>{
                     if(item.nome === "Codelab"){
-                      navigate("/first")
-                      window.location.reload()
+                      setMenu("Codelab")
                     }
                     else if(item.nome === "Login"){
-                      navigate("/Login")
-                      window.location.reload()
+                      setMenu("Login")
                     }
                     else if(item.nome === "Blog"){
-                      navigate("/Three")
-                      window.location.reload()
+                      setMenu("Blog")
                     }
                     else if(item.nome === "Jordanshoes"){
-                      navigate("/Jordan")
-                      window.location.reload()
+                      setMenu("Jordanshoes")
                     }
                     else if(item.nome === "Gameofmemory"){
-                      navigate("/Game")
-                      window.location.reload()
+                      setMenu("Gameofmemory")
                     }
                     else if(item.nome === "Tailwindcopy"){
-                      navigate("/tailwind")
-                      window.location.reload()
+                      setMenu("Tailwindcopy")
                     }
                     else if(item.nome === "LaPizza"){
-                      navigate("/pizza")
-                      window.location.reload()
+                      setMenu("LaPizza")
                     }
                   }
 

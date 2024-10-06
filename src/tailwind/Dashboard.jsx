@@ -3,9 +3,11 @@ import { BsGithub, BsMoonFill } from "react-icons/bs"
 import "../App.css"
 import { RiTailwindCssFill } from "react-icons/ri"
 import Sidebar from "./Sidebar"
+import Reloadpage from "../Portfolio/Reloadpage"
 const Dashboard = ()=>{
     return(
       <div className="app text-[#fff] font-bold bg-[radial-gradient(#193350,#0f172a,#0f172a)] h-[658px] ">
+        <Reloadpage/>
         {/* bg-[radial-gradient #193350,#0f172a)] */}
           <nav className="flex px-[2%] py-[10px] justify-between items-center border-b-[1px] border-[#54565e26]">
               <div className="flex items-center justify-center">

@@ -2,6 +2,7 @@ import { BiHeart } from "react-icons/bi"
 import { Code } from "./Myobject"
 import { useEffect, useState } from "react"
 import { BsHeartFill } from "react-icons/bs"
+import Reloadpage from "../Portfolio/Reloadpage"
 
 const Home = ()=>{
     const [selectid, setselectid] = useState(0)
@@ -20,6 +21,7 @@ const Home = ()=>{
     }
     return(
         <div className="">
+            <Reloadpage/>
             <nav className="bg-[#18181b] grid place-items-center px-[2%] py-[10px]">
                 <div className="font-medium text-[white] text-3xl mb-[20px]"><span className="text-[#E07B67]">Code</span>Lab</div>
 

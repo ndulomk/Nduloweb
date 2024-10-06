@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { jogo } from "./myobject"
 import "./style.css"
+import Reloadpage from "../Portfolio/Reloadpage"
 
 const Game = ()=>{
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -53,6 +54,7 @@ const Game = ()=>{
     return(
       
         <div className="w-full bg-[radial-gradient(#8958ff,#000014)] py-[50px] h-[659px]">
+          <Reloadpage/>
           {showmodal ?<div className="absolute top-0 right-0 left-0 bg-[#0000009f] h-[658px] text-white flex justify-center items-center">
               <div className="bg-[black] w-[30%] h-[40%] rounded-[5px] p-4 flex flex-col items-center">
                 <h1 className="text-center text-[30px] font-bold mb-[20px]">Buuh!</h1>

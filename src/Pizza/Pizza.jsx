@@ -1,6 +1,7 @@
 import { BsCartPlus, BsHeartFill } from "react-icons/bs"
 import { Myorder } from "./myObject"
 import { useState } from "react"
+import Reloadpage from "../Portfolio/Reloadpage"
 
 const Pizza = () => {
   const [carrinho, setCarrinho] = useState([])
@@ -108,6 +109,7 @@ const Pizza = () => {
    }
   return (
     <div>
+      <Reloadpage/>
     {showmessage&&  <div className="bg-[#f1baba] absolute z-30 rounded-[5px] py-1 px-1 font-bold text-[#af1717] right-0">
         O input morada esta vazio
       </div>}
@@ -165,7 +167,7 @@ const Pizza = () => {
       </nav>
       <section className="mt-[40px]">
           <h1 className="text-center font-bold text-[25px] mb-[20px]">Mais vendidas</h1>
-          <div onClick={calculate} className="flex fixed bg-[#ffbc48d8] rounded-[20px] p-[10px] cursor-pointer shadow-xl mx-[5%] items-center right-[1%] top-[330px] opacity-40 hover:opacity-100"><BsCartPlus color="blue" size={30}/><span className="font-bold">{carrinho.length}</span></div>
+          <div onClick={calculate} className="flex fixed bg-[#ffbc48d8] rounded-[20px] p-[10px] cursor-pointer shadow-xl mx-[5%] items-center right-[1%] top-[300px] max-[]: opacity-40 hover:opacity-100"><BsCartPlus color="blue" size={30}/><span className="font-bold">{carrinho.length}</span></div>
           <div className="grid grid-cols-4 gap-5 px-[10%] max-[960px]:grid-cols-2 max-[470px]:grid-cols-1">
             {
               Myorder.map((item, index)=>{

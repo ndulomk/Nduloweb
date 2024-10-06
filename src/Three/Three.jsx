@@ -1,8 +1,10 @@
+import Reloadpage from "../Portfolio/Reloadpage"
 import { Artigos } from "./Artigos"
 
 const Home = ()=>{
     return(
         <div>
+          <Reloadpage/>
             <nav className="flex bg-[#eeeeff] items-center px-[10%] justify-between max-[950px]:flex-col-reverse pb-5">
                 <div className="w-[30%] max-[950px]:w-full max-[950px]:text-center">
                   <div>

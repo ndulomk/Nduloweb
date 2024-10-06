@@ -2,10 +2,12 @@ import { SiJordan } from "react-icons/si"
 import { Shoes } from "./Shoes"
 import { useState } from "react"
 import { BsCart } from "react-icons/bs"
+import Reloadpage from "../Portfolio/Reloadpage"
 const Home = ()=>{
   const [carrinho, setCarrinho] = useState([])
     return(
       <div>
+        <Reloadpage/>
         <div>
           <div>
             <div>

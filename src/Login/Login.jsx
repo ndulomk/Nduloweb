@@ -1,8 +1,10 @@
 import { BsGoogle } from "react-icons/bs"
+import Reloadpage from "../Portfolio/Reloadpage"
 
 const Home = ()=>{
     return(
         <div className="flex w-full h-[658px]">
+            <Reloadpage/>
             <div className="bg-[#1e9e6b40] w-[50%] justify-center flex items-center max-[600px]:hidden">
                 <img src="../../public/images/6/image/image.svg" alt="" className=""/>
             </div>

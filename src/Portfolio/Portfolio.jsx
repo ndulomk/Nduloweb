@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import About from "./About"
-import Dashboard from "./Dashboard"
+import Dashbody from "./Dashbody"
 import Footer from "./Footer"
 import Projetos from "./Projetos"
 import Services from "./Services"
@@ -8,7 +8,13 @@ import Skills from "./Skills"
 import { selectnome} from "../Redux/valuesSlice"
 import { useEffect, useState } from "react"
 import { selectboolean, setboolean} from "../Redux/BooleanSlice"
-
+import First from "../First/First"
+import Jordan from "../second/Jordan"
+import Three from "../Three/Three"
+import Game from "../game/Game"
+import Dashboard from "../tailwind/Dashboard"
+import Pizza from "../Pizza/Pizza"
+import Login from "../Login/Login"
 const Home = ()=>{
   const {nome} = useSelector(selectnome)
   const [darkmode, setDarkmode] = useState(false)
@@ -37,16 +43,25 @@ const Home = ()=>{
       window.scrollTo(1900, 1900)
     }
   
-  
+  const [Menu, setMenu] = useState("Start")
     return(
-        <div className={darkmode ?"bg-[#fdfdff] text-[black] transition-[1s]" :"bg-[#0b0b0b] transition-[1s] text-[#fff]"}>
-          <Dashboard darkmode={darkmode} setDarkmode={setDarkmode}/>
+      <>
+        {Menu === "Start"&&<div className={darkmode ?"bg-[#fdfdff] text-[black] transition-[1s]" :"bg-[#0b0b0b] transition-[1s] text-[#fff]"}>
+          <Dashbody darkmode={darkmode} setDarkmode={setDarkmode}/>
           <About/>
-          <Projetos/>
+          <Projetos setMenu={setMenu}/>
           <Services/>
           <Skills/>
           <Footer/>
-        </div>
+        </div>}
+        {Menu === "Codelab" && <First/>}
+        {Menu === "Login" && <Login/>}
+        {Menu === "Blog"&& <Three/> }
+        {Menu === "Jordanshoes" && <Jordan/>}
+        {Menu === "Gameofmemory" &&<Game/>}
+        {Menu === "Tailwindcopy" &&<Dashboard/>}
+        {Menu === "LaPizza" && <Pizza/>}
+      </>
     )
 
 }
