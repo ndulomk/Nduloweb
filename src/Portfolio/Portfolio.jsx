@@ -15,6 +15,7 @@ import Game from "../game/Game"
 import Dashboard from "../tailwind/Dashboard"
 import Pizza from "../Pizza/Pizza"
 import Login from "../Login/Login"
+import { Analytics } from "@vercel/analytics/react"
 const Home = ()=>{
   const {nome} = useSelector(selectnome)
   const [darkmode, setDarkmode] = useState(false)
@@ -46,7 +47,9 @@ const Home = ()=>{
   const [Menu, setMenu] = useState("Start")
     return(
       <>
+  
         {Menu === "Start"&&<div className={darkmode ?"bg-[#fdfdff] text-[black] transition-[1s]" :"bg-[#0b0b0b] transition-[1s] text-[#fff]"}>
+        <Analytics />
           <Dashbody darkmode={darkmode} setDarkmode={setDarkmode}/>
           <About/>
           <Projetos setMenu={setMenu}/>
