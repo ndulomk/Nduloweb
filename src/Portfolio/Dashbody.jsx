@@ -104,7 +104,7 @@ const Dashboard = ({darkmode, setDarkmode})=>{
             <section className="flex items-center justify-between px-[5%] my-[80px] max-[960px]:flex-col-reverse ">
               <div className="text-[19px] max-[960px]:mt-[60px]">
                 <p className="text-[16px] font-[590] mb-[10px] max-[960px]:text-center">Whats up bro, i{"'"}m</p>
-                <h1 className={boolean ? "bg-[#4b4edf] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97edaa] hover:text-[30px] transition-[0.5s] mb-[10px] max-[305px]:text-center":"bg-[#97edaa] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97bced] hover:text-[30px] transition-[0.5s] mb-[10px] max-[305px]:text-center"}>Edgar Manuel Janota</h1>
+                <h1 className={boolean ? "bg-[#4b4edf] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97edaa]  transition-[0.5s] mb-[10px] max-[305px]:text-center":"bg-[#97edaa] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97bced] transition-[0.5s] mb-[10px] max-[305px]:text-center"}>Edgar Manuel Janota</h1>
                 <p className="font-bold max-[960px]:text-center">Desenvolvedor Frontend</p>
                 <div className="max-[960px]:flex max-[960px]:items-center max-[960px]:justify-center">
                   <button onClick={download} className="bg-[#97bced] text-[black] p-1 font-[600] rounded-[4px] mt-[20px]">Download CV</button>

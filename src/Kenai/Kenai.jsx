@@ -4,6 +4,7 @@ import { BsBellFill, BsCartCheck, BsStarFill } from "react-icons/bs"
 import { IoWatch } from "react-icons/io5"
 import { MdAccountBox } from "react-icons/md"
 import { movies } from "./Object"
+import Reloadpage from "../Portfolio/Reloadpage"
 
 
 const Kenai = () => {
@@ -42,7 +43,7 @@ const Kenai = () => {
     <div className="text-white bg-cover pb-[100px] h-[849px] max-[1000px]:h-[1200px] max-[570px]:h-[1800px] max-[410px]:h-[1400px] pt-[10px]" style={{backgroundImage:"url('/kenai1 (1).png')"}}>
       <div>
         <div>
-          
+          <Reloadpage/>
         </div>
       </div>
       <nav className="flex justify-between items-center px-[4%] py-2 font-[600] mb-[40px]">

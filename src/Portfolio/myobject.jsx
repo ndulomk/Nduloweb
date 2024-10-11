@@ -38,6 +38,11 @@ export const object = [
     id:8,
     nome:"DogsneedHelp",
     info:"Javascript, React, Tailwindcss"
+  },
+  {
+    id:9,
+    nome:"Kenai",
+    info:"Javascript, React, Tailwindcss"
   }
 
 ]

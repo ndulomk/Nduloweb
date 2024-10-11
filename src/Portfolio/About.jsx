@@ -1,4 +1,4 @@
-import { BsInstagram, BsTwitterX } from "react-icons/bs"
+import { BsGithub, BsInstagram, BsTwitterX } from "react-icons/bs"
 import { FaPhoneAlt } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { useSelector } from "react-redux"
@@ -22,6 +22,13 @@ const About = ()=>{
               <div className="flex flex-col items-center justify-center text-[19px] font-[600]">
                 <div className={boolean? "bg-[#1234] p-2 rounded-[15px] cursor-pointer":"bg-[#1f1f1f] p-2 rounded-[15px] cursor-pointer"} onClick={send}>
                   <BsTwitterX className=""/>
+                
+                </div>
+                <p>@eddiendulo</p>  
+              </div>
+              <div className="flex flex-col items-center justify-center text-[19px] font-[600]">
+                <div className={boolean? "bg-[#1234] p-2 rounded-[15px] cursor-pointer":"bg-[#1f1f1f] p-2 rounded-[15px] cursor-pointer"} onClick={send}>
+                  <BsGithub className=""/>
                 
                 </div>
                 <p>@eddiendulo</p>  
