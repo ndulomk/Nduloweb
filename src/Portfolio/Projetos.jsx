@@ -32,11 +32,17 @@ const Projetos = ({setMenu})=>{
                     else if(item.nome === "LaPizza"){
                       setMenu("LaPizza")
                     }
+                    else if(item.nome === "Chihiro"){
+                      setMenu("Chihiro")
+                    }
+                    else if(item.nome === "DogsneedHelp"){
+                      setMenu("DogsneedHelp")
+                    }
                   }
 
                   return(
                     <div key={index} className="mb-[40px] max-[330px]:mb-[80px]">
-                      <img src={item.nome === "Codelab" ? "/first.png":item.nome === "Jordanshoes"?"/jordan.png":item.nome === "Login"?"/login.png":item.nome === "Blog"? "/Three.png":item.nome === "LaPizza"?"/pizza.png":item.nome === "Gameofmemory"?"/memory.png":item.nome === "Tailwindcopy"?"/tailwind.png":<></>} alt="ee" className="h-[65%] w-[100%] rounded-[4px] max-[495px]:h-[55%]"/>
+                      <img src={item.nome === "Codelab" ? "/first.png":item.nome === "Jordanshoes"?"/jordan.png":item.nome === "Login"?"/login.png":item.nome === "Blog"? "/Three.png":item.nome === "LaPizza"?"/pizza.png":item.nome === "Gameofmemory"?"/memory.png":item.nome === "Tailwindcopy"?"/tailwind.png":item.nome === "DogsneedHelp"?"/dogss.png":<></>} alt="ee" className="h-[65%] w-[100%] rounded-[4px] max-[495px]:h-[55%]"/>
                       <div className="pt-2">
                         <h1 className="font-bold text-[19px]">{item.nome}</h1>
                         <p className={boolean ? "text-[#4b4edf] font-[500]":"text-[#97edaa] font-[500]"}>{item.info}</p>

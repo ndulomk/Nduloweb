@@ -3,7 +3,7 @@ import { BiPlay } from "react-icons/bi"
 import { BsGoogle, BsInstagram, BsTwitter } from "react-icons/bs"
 import { FaFacebook } from "react-icons/fa"
 
-const Home = ()=>{
+const Five = ()=>{
   const imageone = useRef()
   const imagetwo = useRef()
   const [mywidth, setmywidth] = useState(window.screen.width)
@@ -69,4 +69,4 @@ const Home = ()=>{
     )
 
 }
-export default Home
+export default Five

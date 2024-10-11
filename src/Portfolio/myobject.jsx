@@ -33,6 +33,11 @@ export const object = [
     id:7,
     nome:"Tailwindcopy",
     info:"Javascript, React, css"
+  },
+  {
+    id:8,
+    nome:"DogsneedHelp",
+    info:"Javascript, React, Tailwindcss"
   }
 
 ]

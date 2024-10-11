@@ -16,6 +16,8 @@ import Dashboard from "../tailwind/Dashboard"
 import Pizza from "../Pizza/Pizza"
 import Login from "../Login/Login"
 import { Analytics } from "@vercel/analytics/react"
+import Five from "../Five/Five"
+import Dog from "../Dog/Dog"
 const Home = ()=>{
   const {nome} = useSelector(selectnome)
   const [darkmode, setDarkmode] = useState(false)
@@ -64,6 +66,7 @@ const Home = ()=>{
         {Menu === "Gameofmemory" &&<Game/>}
         {Menu === "Tailwindcopy" &&<Dashboard/>}
         {Menu === "LaPizza" && <Pizza/>}
+        {Menu === "DogsneedHelp" && <Dog/>}
       </>
     )
 
