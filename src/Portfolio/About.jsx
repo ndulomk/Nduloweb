@@ -3,6 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
+import scrollreveal from "scrollreveal"
 
 const About = ()=>{
   const send = ()=>{
@@ -12,7 +13,7 @@ const About = ()=>{
   console.log(boolean)
     return(
       
-        <div className="px-[5%] pt-[20px] pb-[40px] h-[400px] max-[680px]:mb-[200px]" style={{backgroundImage:"url('/src/assets/back.png')"}}>
+        <div className="px-[5%] pt-[20px] pb-[40px] h-[400px] max-[680px]:mb-[200px] area2" style={{backgroundImage:"url('/src/assets/back.png')"}}>
             <h1 className={boolean ? "font-bold text-[#4b4edf] text-[25px] text-center mb-[20px]":"font-bold text-[#97edaa] text-[25px] text-center mb-[20px]"}>Sobre mim</h1>
 
             <div className="text-center font-[500]  flex justify-center">

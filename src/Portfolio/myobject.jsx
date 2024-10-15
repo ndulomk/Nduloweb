@@ -1,49 +1,65 @@
 export const object = [
   {
     id:1,
-    nome:"Codelab",
-    info:"Javascript, React, tailwindcss"
+    nome:"Xbox",
+    info:"Javascript, React, Tailwindcss"
   },
   {
     id:2,
-    nome:"Jordanshoes",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
-    id:3,
-    nome:"Login",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
-    id:4,
-    nome:"Blog",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
-    id:5,
     nome:"LaPizza",
     info:"Javascript, React, tailwindcss"
   },
   {
+    id:3,
+    nome:"WBroker",
+    info:"Javascript, React, tailwindcss"
+  },
+  {
+    id:4,
+    nome:"Kenai",
+    info:"Javascript, React, Tailwindcss"
+  },
+  {
+    id:5,
+    nome:"Blog",
+    info:"Javascript, React, tailwindcss"
+  },
+  {
     id:6,
+    nome:"Jordanshoes",
+    info:"Javascript, React, tailwindcss"
+  },
+  {
+    id:7,
     nome:"Gameofmemory",
     info:"Javascript, React, css"
   },
   {
-    id:7,
+    id:8,
     nome:"Tailwindcopy",
     info:"Javascript, React, css"
   },
   {
-    id:8,
+    id:9,
     nome:"DogsneedHelp",
     info:"Javascript, React, Tailwindcss"
   },
   {
-    id:9,
-    nome:"Kenai",
+    id:10,
+    nome:"Login",
+    info:"Javascript, React, tailwindcss"
+  },
+  {
+    id:11,
+    nome:"Spider-Man",
     info:"Javascript, React, Tailwindcss"
-  }
+  },
+  {
+    id:12,
+    nome:"Codelab",
+    info:"Javascript, React, tailwindcss"
+  },
+  
 
 ]
 

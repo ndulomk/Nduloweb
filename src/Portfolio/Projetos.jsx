@@ -1,13 +1,15 @@
 import { useSelector } from "react-redux"
 import { object } from "./myobject"
 import { selectboolean } from "../Redux/BooleanSlice"
+import scrollreveal from "scrollreveal"
 
 const Projetos = ({setMenu})=>{
   const {boolean} = useSelector(selectboolean)
+  scrollreveal().reveal('.area3')
     return(
-        <div className="max-[650px]:mt-[40%] max-[624px]:mt-[500px] ">
+        <div className="max-[650px]:mt-[40%] max-[624px]:mt-[500px] area3">
             <h1 className={boolean ?"text-[#4b4edf] font-bold text-[25px] text-center" :"text-[#97edaa] font-bold text-[25px] text-center"}>Projectos</h1>
-            <div className="grid grid-cols-3 gap-5 px-[5%] pt-[20px] mb-[60px] max-[1170px]:grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:px-[15%] max-[1170px]:px-[10%]">
+            <div className="grid grid-cols-3 gap-5 px-[5%] pt-[20px] mb-[60px] max-[1170px]:grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:px-[15%] max-[1170px]:px-[10%] ">
               {
                 object.map((item, index)=>{
                   const sendto=()=>{
@@ -41,11 +43,20 @@ const Projetos = ({setMenu})=>{
                     else if(item.nome === "Kenai"){
                       setMenu("Kenai")
                     }
+                    else if(item.nome === "Spider-Man"){
+                      setMenu("Spider-Man")
+                    }
+                    else if(item.nome === "Xbox"){
+                      setMenu("Xbox")
+                    }
+                    else if(item.nome === "WBroker"){
+                      setMenu("WBroker")
+                    }
                   }
 
                   return(
                     <div key={index} className="mb-[40px] max-[330px]:mb-[80px]">
-                      <img src={item.nome === "Codelab" ? "/first.png":item.nome === "Jordanshoes"?"/jordan.png":item.nome === "Login"?"/login.png":item.nome === "Blog"? "/Three.png":item.nome === "LaPizza"?"/pizza.png":item.nome === "Gameofmemory"?"/memory.png":item.nome === "Tailwindcopy"?"/tailwind.png":item.nome === "DogsneedHelp"?"/dogss.png":item.id === 9 ? "/Kenai.png":<></>} alt="ee" className="h-[65%] w-[100%] rounded-[4px] max-[495px]:h-[55%]"/>
+                      <img src={item.nome === "Codelab" ? "/first.png":item.nome === "Jordanshoes"?"/jordan.png":item.nome === "Login"?"/login.png":item.nome === "Blog"? "/Three.png":item.nome === "LaPizza"?"/pizza.png":item.nome === "Gameofmemory"?"/memory.png":item.nome === "Tailwindcopy"?"/tailwind.png":item.nome === "DogsneedHelp"?"/dogss.png":item.nome === "Kenai" ? "/Kenai.png":item.id === 11 ? "/miles.png":item.id === 1?"/xboxL.png":item.nome === "WBroker"?"/broker.png":""} alt="ee" className="h-[65%] w-[100%] rounded-[4px] max-[495px]:h-[55%]"/>
                       <div className="pt-2">
                         <h1 className="font-bold text-[19px]">{item.nome}</h1>
                         <p className={boolean ? "text-[#4b4edf] font-[500]":"text-[#97edaa] font-[500]"}>{item.info}</p>

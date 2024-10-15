@@ -3,7 +3,7 @@ const Reloadpage = () => {
     window.location.reload()
   }
   return (
-    <div className="fixed bottom-[30%] right-[5%] text-[#fff] bg-[#3838ce] p-2 rounded font-bold">
+    <div className="fixed bottom-[30%] right-[5%] text-[#fff] bg-[#3838ce] p-2 rounded font-bold z-[99]">
       <button onClick={back}>Voltar</button>
     </div>
   )

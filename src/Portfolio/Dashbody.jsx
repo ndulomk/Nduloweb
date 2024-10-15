@@ -6,6 +6,7 @@ import { changeboolean, selectboolean, setboolean } from "../Redux/BooleanSlice"
 import useCookie from "../useCookie"
 import { FaListUl } from "react-icons/fa6"
 import { useEffect, useRef, useState } from "react"
+import scrollreveal from "scrollreveal"
 const Dashboard = ({darkmode, setDarkmode})=>{
   const dispatch = useDispatch()
   const pegar =(nome)=>{
@@ -62,9 +63,13 @@ const Dashboard = ({darkmode, setDarkmode})=>{
     
 
   },[width])
+    useEffect(()=>{
+
+    },[])
+    scrollreveal().reveal("area1")
     return(
         <div>
-          {openside ?<div className="px-[5%] pt-4 absolute bg-[#130923] h-full text-[white]">
+          {openside ?<div className="px-[5%] pt-4 fixed bg-[#130923] h-full text-[white]">
             <ul className="flex gap-[20px] font-[600] transition justify-center flex-col">
             <FaListUl size={30} onClick={()=>setOpenSide(!openside)} className="cursor-pointer"/>
                   {
@@ -101,7 +106,7 @@ const Dashboard = ({darkmode, setDarkmode})=>{
 
               </ul>
             </nav>
-            <section className="flex items-center justify-between px-[5%] my-[80px] max-[960px]:flex-col-reverse ">
+            <section className="flex items-center justify-between px-[5%] my-[80px] max-[960px]:flex-col-reverse area1">
               <div className="text-[19px] max-[960px]:mt-[60px]">
                 <p className="text-[16px] font-[590] mb-[10px] max-[960px]:text-center">Whats up bro, i{"'"}m</p>
                 <h1 className={boolean ? "bg-[#4b4edf] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97edaa]  transition-[0.5s] mb-[10px] max-[305px]:text-center":"bg-[#97edaa] text-black font-bold text-[25px] p-1 rounded-[3px] cursor-pointer hover:bg-[#97bced] transition-[0.5s] mb-[10px] max-[305px]:text-center"}>Edgar Manuel Janota</h1>

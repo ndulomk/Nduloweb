@@ -4,13 +4,15 @@ import { FiFigma } from "react-icons/fi"
 import { CgSmartphone } from "react-icons/cg"
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
+import scrollreveal from "scrollreveal"
 
 const Services = ()=>{
   const {boolean} = useSelector(selectboolean)
+  scrollreveal().reveal('.area4')
     return(
         <div className="px-[5%] py-[20px]">
             <h1 className={boolean ? "text-center text-[#4b4edf] font-bold text-[25px] mb-[20px]":"text-center text-[#97edaa] font-bold text-[25px] mb-[20px]"}>Services</h1>
-            <div className="grid grid-cols-4 gap-[20px] max-[750px]:grid-cols-2">
+            <div className="grid grid-cols-4 gap-[20px] max-[750px]:grid-cols-2 area4">
               {
                 myServices.map((item, index)=>{
 

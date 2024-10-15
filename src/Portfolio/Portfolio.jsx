@@ -19,12 +19,14 @@ import { Analytics } from "@vercel/analytics/react"
 import Five from "../Five/Five"
 import Dog from "../Dog/Dog"
 import Kenai from "../Kenai/Kenai"
+import scrollreveal from "scrollreveal"
+import Spider from "../Spider/Spider"
+import Xbox from "../Xbox/Xbox"
+import Buyhouse from "../buyhouse/Buyhouse"
 const Home = ()=>{
   const {nome} = useSelector(selectnome)
   const [darkmode, setDarkmode] = useState(false)
   const dispatch = useDispatch()
-
-
   const {boolean} = useSelector(selectboolean)
 
 
@@ -46,8 +48,13 @@ const Home = ()=>{
     else if(nome === "Skills"){
       window.scrollTo(1900, 1900)
     }
+
+   
   
+ 
+
   const [Menu, setMenu] = useState("Start")
+
     return(
       <>
   
@@ -69,6 +76,9 @@ const Home = ()=>{
         {Menu === "LaPizza" && <Pizza/>}
         {Menu === "DogsneedHelp" && <Dog/>}
         {Menu === "Kenai" && <Kenai/>}
+        {Menu === "Spider-Man" && <Spider/>}
+        {Menu === "Xbox" && <Xbox/>}
+        {Menu === "WBroker" && <Buyhouse/>}
       </>
     )
 
