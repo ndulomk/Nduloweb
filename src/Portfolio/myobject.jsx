@@ -20,45 +20,15 @@ export const object = [
     info:"Javascript, React, Tailwindcss"
   },
   {
-    id:5,
-    nome:"Blog",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
-    id:6,
-    nome:"Jordanshoes",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
-    id:7,
-    nome:"Gameofmemory",
-    info:"Javascript, React, css"
-  },
-  {
-    id:8,
-    nome:"Tailwindcopy",
-    info:"Javascript, React, css"
-  },
-  {
     id:9,
     nome:"DogsneedHelp",
     info:"Javascript, React, Tailwindcss"
   },
   {
-    id:10,
-    nome:"Login",
-    info:"Javascript, React, tailwindcss"
-  },
-  {
     id:11,
     nome:"Spider-Man",
     info:"Javascript, React, Tailwindcss"
-  },
-  {
-    id:12,
-    nome:"Codelab",
-    info:"Javascript, React, tailwindcss"
-  },
+  }
   
 
 ]
@@ -70,7 +40,7 @@ export const myServices = [
   },
   {
     id:2,
-    nome:"WebSites responsivos"
+    nome:"Business Analysts"
   },
   {
     id:3,

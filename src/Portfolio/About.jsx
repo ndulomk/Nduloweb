@@ -17,7 +17,7 @@ const About = ()=>{
             <h1 className={boolean ? "font-bold text-[#4b4edf] text-[25px] text-center mb-[20px]":"font-bold text-[#97edaa] text-[25px] text-center mb-[20px]"}>Sobre mim</h1>
 
             <div className="text-center font-[500]  flex justify-center">
-              <p className="w-[50%]">My name is Edgar Manuel Janota, im atually in internship on startup Softwise, i develop modern interfaces and of high quality, focus on perfomance, animations, responsivity and beauty</p>
+              <p className="w-[50%] max-[620px]:w-full">My name is Edgar Manuel Janota, im atually in internship on startup Softwise, i develop modern interfaces and of high quality, focus on perfomance, animations, responsivity and beauty</p>
             </div>
             <div className="flex items-center justify-center text-center gap-[20px] mt-[20px] max-[680px]:flex-col">
               <div className="flex flex-col items-center justify-center text-[19px] font-[600]">
