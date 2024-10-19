@@ -47,13 +47,7 @@ const About = ()=>{
             
                 <p>madkiddulo</p>
               </div>
-              <div className="flex flex-col items-center justify-center text-[19px] font-[600]">
-                <div className={boolean? "bg-[#1234] p-2 rounded-[15px] cursor-pointer":"bg-[#1f1f1f] p-2 rounded-[15px] cursor-pointer"} onClick={send}>
-                 <FaPhoneAlt className=""/>  
-                </div>
-               
-                +244 945001546
-              </div>
+
             </div>
         </div>
     )
