@@ -7,7 +7,7 @@ import Services from "./Services"
 import Skills from "./Skills"
 import { selectnome} from "../Redux/valuesSlice"
 import { useEffect, useState } from "react"
-import { selectboolean, setboolean} from "../Redux/BooleanSlice"
+import { selectboolean} from "../Redux/BooleanSlice"
 import First from "../First/First"
 import Jordan from "../second/Jordan"
 import Three from "../Three/Three"
@@ -16,13 +16,15 @@ import Dashboard from "../tailwind/Dashboard"
 import Pizza from "../Pizza/Pizza"
 import Login from "../Login/Login"
 import { Analytics } from "@vercel/analytics/react"
-import Five from "../Five/Five"
+
 import Dog from "../Dog/Dog"
 import Kenai from "../Kenai/Kenai"
-import scrollreveal from "scrollreveal"
+
 import Spider from "../Spider/Spider"
 import Xbox from "../Xbox/Xbox"
 import Buyhouse from "../buyhouse/Buyhouse"
+
+import { Reveal } from "./Reveal"
 const Home = ()=>{
   const {nome} = useSelector(selectnome)
   const [darkmode, setDarkmode] = useState(false)
@@ -57,14 +59,22 @@ const Home = ()=>{
 
     return(
       <>
-  
         {Menu === "Start"&&<div className={darkmode ?"bg-[#fdfdff] text-[black] transition-[1s]" :"bg-[#0b0b0b] transition-[1s] text-[#fff]"}>
         <Analytics />
-          <Dashbody darkmode={darkmode} setDarkmode={setDarkmode}/>
-          <About/>
-          <Projetos setMenu={setMenu}/>
-          <Services/>
-          <Skills/>
+            <Dashbody darkmode={darkmode} setDarkmode={setDarkmode}/>
+  
+          <Reveal>
+            <About/>
+          </Reveal>
+          <Reveal>
+            <Projetos setMenu={setMenu}/>
+          </Reveal>
+          <Reveal>
+            <Services/>
+          </Reveal>
+          <Reveal>
+            <Skills/>
+          </Reveal>
           <Footer/>
         </div>}
         {Menu === "Codelab" && <First/>}

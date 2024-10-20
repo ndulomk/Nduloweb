@@ -3,11 +3,11 @@ import { FaJs } from "react-icons/fa"
 import { SiExpress, SiSqlite, SiTailwindcss } from "react-icons/si"
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
-import scrollreveal from "scrollreveal"
+
 
 const Skills = ()=>{
   const {boolean} = useSelector(selectboolean)
-  scrollreveal().reveal('.area5')
+
     return(
         <div className="mt-[20px] px-[5%] mb-[100px] pb-[20px] area5">
           <h1 className={boolean ? "text-[#4b4edf] text-center font-bold text-[25px] mb-[20px]":"text-[#97edaa] text-center font-bold text-[25px] mb-[20px]"}>Skills</h1>

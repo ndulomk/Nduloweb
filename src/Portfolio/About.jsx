@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
-import scrollreveal from "scrollreveal"
+
 
 const About = ()=>{
   const send = ()=>{

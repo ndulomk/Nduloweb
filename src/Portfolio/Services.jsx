@@ -1,15 +1,15 @@
 import { BiServer } from "react-icons/bi"
 import { myServices } from "./myobject"
 import { FiFigma } from "react-icons/fi"
-import { CgSmartphone } from "react-icons/cg"
+
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
-import scrollreveal from "scrollreveal"
+
 import { GrBusinessService } from "react-icons/gr"
 
 const Services = ()=>{
   const {boolean} = useSelector(selectboolean)
-  scrollreveal().reveal('.area4')
+
     return(
         <div className="px-[5%] py-[20px]">
             <h1 className={boolean ? "text-center text-[#4b4edf] font-bold text-[25px] mb-[20px]":"text-center text-[#97edaa] font-bold text-[25px] mb-[20px]"}>Services</h1>

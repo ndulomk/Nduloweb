@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import { selectboolean } from "../Redux/BooleanSlice"
-import useCookie from "../useCookie"
+
 
 const Footer = ()=>{
   const {boolean} = useSelector(selectboolean)

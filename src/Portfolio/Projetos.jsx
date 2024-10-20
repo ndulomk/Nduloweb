@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux"
 import { object } from "./myobject"
 import { selectboolean } from "../Redux/BooleanSlice"
-import scrollreveal from "scrollreveal"
+
 
 const Projetos = ({setMenu})=>{
   const {boolean} = useSelector(selectboolean)
-  scrollreveal().reveal('.area3')
+
     return(
         <div className="max-[650px]:mt-[40%] max-[624px]:mt-[500px] area3">
             <h1 className={boolean ?"text-[#4b4edf] font-bold text-[25px] text-center" :"text-[#97edaa] font-bold text-[25px] text-center"}>Projectos</h1>
