@@ -7,7 +7,7 @@ const Projetos = ({setMenu})=>{
   const {boolean} = useSelector(selectboolean)
 
     return(
-        <div className="max-[650px]:mt-[40%] max-[624px]:mt-[500px] area3">
+        <div className="max-[650px]:mt-[40%] max-[624px]:mt-[120px] area3">
             <h1 className={boolean ?"text-[#4b4edf] font-bold text-[25px] text-center" :"text-[#97edaa] font-bold text-[25px] text-center"}>Projects</h1>
             <div className="grid grid-cols-3 gap-5 px-[5%] pt-[20px] mb-[60px] max-[1170px]:grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:px-[15%] max-[1170px]:px-[10%] ">
               {
