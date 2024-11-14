@@ -70,8 +70,8 @@ const Dashboard = ({darkmode, setDarkmode})=>{
   
     return(
         <div>
-          {openside ?<div className="px-[5%] pt-4 fixed bg-[#130923] h-full text-[white]">
-            <ul className="flex gap-[20px] font-[600] transition justify-center flex-col">
+          {openside ?<div className="px-[5%] pt-4 fixed bg-[#130923] h-full text-[white] z-50">
+            <ul className="flex gap-[20px] font-[600] transition justify-center flex-col ">
             <FaListUl size={30} onClick={()=>setOpenSide(!openside)} className="cursor-pointer"/>
                   {
                     Nav.map((item, index)=>{
