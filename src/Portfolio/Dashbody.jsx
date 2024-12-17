@@ -33,7 +33,7 @@ const Dashboard = ({darkmode, setDarkmode})=>{
 
   }
   const download =()=>{
-    window.open("CertidãoDeConformidadeTributaria.pdf")
+    window.open("curriculo.pdf")
   }
   const drop = useRef(null)
   const fa = useRef(null)
