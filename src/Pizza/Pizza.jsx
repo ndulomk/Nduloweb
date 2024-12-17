@@ -114,7 +114,7 @@ const Pizza = () => {
         O input morada esta vazio
       </div>}
       {modal&&<div className="bg-[#00000056] w-full h-[1210px] absolute z-10 flex justify-center pt-[100px]">
-        <div className="bg-[#fefbf4] border-[#ffbc48d8] border-[1px] fixed w-[40%] h-[60%] rounded-[5px] py-3 flex justify-start flex-col px-[2%] shadow-xl max-[880px]:w-[70%] max-[500px]:w-[90%] max-[390px]:h-[80%]">
+        <div className="bg-[#fefbf4] border-[#ffbc48d8] border-[1px] fixed w-[40%] h-[90%] rounded-[5px] py-3 flex justify-start flex-col px-[2%] shadow-xl max-[880px]:w-[70%] max-[500px]:w-[90%] max-[390px]:h-[80%]">
         <span className="font-[600] text-[18px] mb-[20px] text-center">Finish Order</span>
         <div className="">
           {
